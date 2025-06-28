@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        do{
+            text-decoration: underline;
+        }
+        /* this selector has specificity of 10 */
+        [uday=a] {
+            color: #000;
+            background-color: rgba(0, 0, 255, 0.116);
+        }
+
+        /* this selector has specificity of 1 + 10 = 11 means elementselector(1) + classSelector(10) */
+        h6.yellow {
+            color: rgba(151, 151, 18, 0.808);
+        }
+
+        /* this selector has specificity of 10 */
+        #htitle {
+            color: rgb(170, 8, 252);
+            text-decoration: underline;
+        }
+
+        /* this selector has specificity of 10 */
+        .cred {
+            color: aqua;
+        }
+
+        /* this selector has specificity of 10 */
+        /* this selector has specificity of 10 */
+        .purple {
+            color: purple;
+        }
+
+        /* this selector has specificity of 10 */
+        div pre {
+            color: rgba(131, 2, 2, 0.733);
+            word-break: break-all;
+            overflow: hidden;
+            text-overflow: clip;
+            box-sizing: border-box;
+        }
+
+        /* Exercise */
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+            ;
+        }
+
+        /* a has 1 (element selector), harryclass has 10(class selector), rohan-class has 10(class selector), href has 10(attribute selector), hover has 10(pseudo selector)
+        Total Specificity = 1 + 10 + 10 + 10 + 10 => 41 */
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Cascading Style Alogorithm</h1>
+    <div class="yellow">
+        <h1 id="title" class="cred yellow purple" uday="a">
+            <do>Specificity</do>
+            <br>
+            <span>inline css > id > attribute selector = last defined class> Element selector > Universal Selector</span>
+            <pre>
+                -element selector is 1.
+                -class selector is 10.
+                -attribute selector is 10.
+                -pseudo has 10
+                -id selector is 100.
+                -Inline has 1000.
+
+            </pre>
+        </h1>
+    </div>
+
+    <h6 class="yellow cred purple">Uday sharma
+        this selector has specificity of 1 + 10 = 11 means elementselector(1) + classSelector(10)
+        <br><br><br>
+        Exercise <br>
+        <pre>
+            a.harryclass.rohan-class[href]:hover {
+                color: red;
+                ;
+            }
+
+
+Solution -
+        </pre>
+        a has 1 (element selector), harryclass has 10(class selector), rohan-class has 10(class selector), href has
+        10(attribute selector), hover has 10(pseudo selector)
+        Total Specificity = 1 + 10 + 10 + 10 + 10 => 41
+    </h6>
+</body>
+
+</html>

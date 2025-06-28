@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic page</title>
+    <style>
+        .head1{
+            font-size: 40px;
+            color: #009900;
+            font-weight: bold;
+        }
+        .head2{
+            font-size: 17px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        body{
+            margin: 0 auto;
+            background-position: center;
+            background-size: contain;
+        }
+        .menu{
+            position: sticky;
+            top: 0;
+            background-color: #009900;
+            padding: 10px 0px 10px 0px;
+            color: white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .menu a{
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        footer{
+            width: 100%;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            position: absolute;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="head1">Uday Sharma</div>
+        <div class="head2">A student wants to be a Software Engineer</div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu">
+            <a href="#home">HOME</a>
+            <a href="#news">NEWS</a>
+            <a href="#notification">NOTIFICATIONS</a>
+            <div class="menu-login">
+                <a href="#login">LOGIN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Section -->
+    <div class="body_sec">
+        <section id="content">
+            <h3>Content Section</h3>
+        </section>
+    </div>
+
+    <!-- footer Section -->
+    <footer>
+        footer Section
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: rgb(75, 88, 114);
+        }
+
+        .box1{
+            color: chartreuse;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid salmon;
+            /* this height is only for content means*/
+            /* Total Height = height + padding + margin + border */
+            height: 100px;
+
+            /* border box is a property which sets total height as specified by developer
+            ** Here height is equals to (content height + padding + border ) not included margin  */
+            box-sizing: border-box;
+        }
+        .box2{
+            color: rgb(250, 234, 6);
+            padding: 10px;
+
+            margin: 25px;
+            margin-top: 35px;
+            border: 2px solid salmon;
+            height: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    
+    <div class="box box2">I am a another box</div>
+    <p>
+        here only box 2 margin is applied and box1 margin has neglected bcs the box having big margin will be applied only between them.
+    </p>
+</body>
+</html>

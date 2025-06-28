@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+            color: violet;
+        }
+
+        /* Id Selector */
+        #red {
+            color: rgba(149, 233, 174, 0.952);
+            background-color: coral;
+        }
+
+        /* Child Selector */
+        div>h1 {
+            background-image: url(../V1/techWaste.jpg);
+        }
+
+        /* Group Selectors */
+        #red,
+        p {
+            color: rgba(149, 233, 174, 0.952);
+            background-color: coral;
+        }
+
+        /* Descedent Selectors */
+        div article{
+            background-color: #582c2c;
+        }
+
+        /* Universal Selectors */
+        *{
+            margin: 0%;
+            padding: 0;
+        }
+        /* Pseudo Selectors */
+        article:active{
+            color: blueviolet;
+            background-color: aquamarine;
+        }
+        p:hover{
+            color: blueviolet;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1 id="red">I am the 1st div</h1>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa molestias eligendi dolorem vitae
+                inventore magnam voluptatum, quo dolorum dicta neque corporis sunt mollitia expedita et est cumque
+                incidunt nisi!
+            </article>
+        </div>
+    </div>
+
+    <span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quia alias doloremque repellat praesentium quis
+            iure, in voluptatem dolore iusto perspiciatis eveniet, quam laudantium autem fuga porro quaerat est vero
+            incidunt vel id quae.</p>
+    </span>
+
+</body>
+
+</html>

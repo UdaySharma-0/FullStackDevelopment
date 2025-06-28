@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css List</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 0;
+            border: 2px solid black;
+        }
+
+        nav ul li form {
+            color: rgb(8, 83, 117);
+            text-transform: capitalize;
+            list-style: url(myntraIcon.png);
+            /* list-style-type:url('myntraIcon.png'); */
+            /* list style position inside krne se marker li ke andar aata hai mtlb list bullets and list same block me aate hain */
+            /* list-style-position:inside; */
+
+            /* list-style-image: url(../V1/techWaste.jpg);*/
+
+        }
+
+        button {
+            border: none;
+            background-color: lightblue;
+        }
+
+        li {
+            list-style: circle;
+            /* border: 2px solid black; */
+            padding: 5px;
+            display: inline-flex;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="img">
+                <img src="myntraIcon.png" alt="logo" height="30px">
+            </li>
+            <li>
+                <form action="#" method="post">
+
+                    <button type="submit">Home</button>
+                </form>
+
+            </li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

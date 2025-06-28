@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .overflow {
+            width: 40vw;
+            height: 30vh;
+            border: 2px solid slateblue;
+            overflow:auto; /*-:visible , scroll, hidden */
+            overflow-x:hidden;
+            overflow-y: scroll; 
+
+            /* Overflow shorthand  */
+            overflow: auto scroll;
+
+            /* white-space: nowrap; */
+            /* text niche nhi girega */
+            text-overflow:ellipsis;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overflow">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium in distinctio autem! Harum,
+        necessitatibus cum! Quaerat vel ullam ducimus odio maiores neque esse accusamus illum, fugit nisi quam iure?
+    </div>
+</body>
+
+</html>

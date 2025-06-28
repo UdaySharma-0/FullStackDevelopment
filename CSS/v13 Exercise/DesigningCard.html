@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing the card</title>
+
+   <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+       
+        body{
+            /* text-align: center; */
+            background-color: rgb(248, 247, 247);
+        }
+        .box{
+            margin: 10px;
+            padding: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 80vh;
+            width: 350px;
+            border: 1px solid #a19f9f56;
+            border-radius: 10px;            
+            background-color: #fff;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+            /* box-sizing: border-box; */
+            
+        }
+        .caption{
+            margin: 10px;
+            position: relative;
+            top: 10px;
+            padding: 2px;            
+            font-size: small;
+            font-family: Poppins,sans-serif;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgba(167, 166, 166, 0.329);
+            border-radius: 10px;
+            width: 20vw;
+            height: 55vh;
+            display: inline;
+        }
+        
+        img{
+            border: none;
+            border-radius: 10px;
+        }
+        .para{
+            margin: 10px;
+            font-family: Poppins,sans-serif;
+            font-size: 16px;
+            color:rgba(167, 166, 166, 0.932);
+            
+            line-height: 1.5;
+            width: 330px;
+            height: 150px;
+            overflow: hidden;
+        }
+        .heading{
+            margin: 20px 10px 10px 10px;
+            font-family: Poppins,sans-serif;
+            font-size: 24px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .button{
+            text-align: center;
+            margin: 10px;
+            
+        }
+        button{
+           padding: 8px 16px;
+           background-color: rgba(0, 119, 204, 0.212);
+           border: none;
+           border-radius: 10px;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           color:rgb(0 125 204);
+        }
+    </style>
+</head>
+<body>
+    <!-- Card.png contains an image. Write html and css code to design this card. -->
+
+    <div class="box">
+        <div class="box1">
+            <img src="lakeImage.jpg" alt="lake image" width="350px">
+        </div>
+        <div class="caption">
+            Nature
+        </div>
+        <div class="caption">
+            Lake
+        </div>
+
+        <h2 class="heading">
+            Lago di Braies
+        </h2>
+        <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim nisi deserunt earum totam quis, culpa iste laudantium? Velit esse cupiditate nihil. Voluptatum, aspernatur adipisci commodi et reprehenderit deserunt quia.
+        </p>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+</html>

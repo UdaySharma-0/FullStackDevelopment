@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set the position</title>
+    <style>
+        /* Position ek static property hai to ise ese change nhi kr skte like top : 2px;*/
+        /* position - Relative Absolute */
+
+
+        /* Relative me box jahan h vhan se top, bottom etc property ko follow krta hai */
+
+        /* Absolute me box apne last acenstor position ke according position(like top, bottom etc ) ko follow krta hai */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+            width: 80vw;
+            height: 45vh;
+        }
+
+        .box1 {
+            /* nearest postion ancestor */
+            position: absolute;
+            /* position: sticky; */
+            background-color: aqua;
+            height: 111px;
+            width: 100%;
+            top: 0px;
+            left: 3px;
+
+            /* z-index is used to handle box layer i.e. which is stay at top */
+            z-index: 89;
+        }
+
+        .box2 {
+            /* position: relative;
+            top: 1px;
+            bottom: 64px;
+            left: 84px; */
+            background-color: lightpink;
+        }
+
+        .box3 {
+            position: fixed;
+            bottom: 0px;
+            left: 8vw;
+            height: 111px;
+            background-color: purple;
+        }
+
+        .box4 {
+            background-color: brown;
+        }
+
+        .parent {
+            margin: 31px;
+            padding: 34px;
+            border: 2px solid brown;
+
+            /* Exception :- transform, filter, or perspectiveproperties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+    </div>
+</body>
+
+</html>
