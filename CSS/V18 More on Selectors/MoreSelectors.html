@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Css Selectors</title>
+    <style>
+        .boxes{
+            border: 2px solid black;
+            
+        }
+        /* .boxes ::first-line{
+            /* border: 1px solid salmon; */
+            /* color: royalblue;
+        }
+
+        
+        .boxes *{
+            background-color: yellow;
+            color: black;
+        } */ 
+        
+        /* p, a, [data-color='primary']{
+            color: yellowgreen;
+            padding: 45px;
+        } */
+
+        .box:nth-child(even){
+            background-color: blueviolet;
+        }
+        .box:nth-child(odd){
+            background-color:purple;
+        }
+
+        .box:nth-last-child(1){
+            background-color: aqua;
+        }
+
+        .boxes::before{
+            content: "Uday is a good boy";
+            color: blue;
+        }
+
+        .boxes::after{
+            content: "Sigma course is good";
+        }
+
+        .boxes::selection{
+            background-color: black;
+            color: aquamarine;
+        }
+        .boxes ::first-letter{
+            font-size: 2em;
+            color: red;
+            font-weight: bold;
+        }
+
+        input::placeholder{
+            color: rgb(132, 132, 238);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="boxes">
+        <div data-color='primary' class="box">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem non quod, tempore iure obcaecati neque perferendis voluptates vitae quae nam quam corporis rerum optio a amet saepe! Necessitatibus repudiandae velit, quos rem sapiente animi?</p>
+        </div>
+        <div class="box">
+            <p>This is the first box.</p>
+        </div>
+        <div class="box">
+            <p>This is the first box.</p>
+        </div>
+
+        <input type="text" placeholder="Type your name here" >
+    </div>
+</body>
+</html>

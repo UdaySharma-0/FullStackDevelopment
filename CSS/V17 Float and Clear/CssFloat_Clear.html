@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            width: 100%;
+            display: flow-root;
+        }
+        .card1{
+            border: 2px solid lightseagreen;
+        }
+        img{
+            float:right;
+            margin-right: 20px;
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 0px 0px;
+            background-color: #f0f0f0;
+        }
+        .card1:nth-child(3){
+            clear: both; /* This will clear the float of the image above  Two more options are right and left*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="./../V16 Exercise/github.png" alt="" width="230">
+        <div class="card1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum atque ad itaque vitae numquam doloribus ipsam delectus, possimus magni aliquid error similique nulla!</div>
+        <div class="card1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis corporis corrupti, accusantium, ab asperiores consequatur commodi odit, alias deleniti quibusdam veniam. Laborum rerum aut facilis quasi quisquam distinctio iusto cum laboriosam dolorum at. Cum maxime quibusdam necessitatibus consectetur, quisquam velit praesentium repudiandae molestias pariatur mollitia fugiat quis incidunt vitae, voluptate minima corporis ullam? Sint dolorum doloribus ratione autem dignissimos mollitia eos! Consequuntur id incidunt omnis nisi, porro voluptatem possimus ducimus molestias, minima voluptatum quam consequatur eum quod animi voluptates cupiditate reprehenderit repudiandae voluptate? Veritatis ducimus praesentium delectus nulla tempore distinctio voluptatem amet eaque maxime, reiciendis sapiente veniam necessitatibus explicabo qui? Nihil natus vitae tenetur ipsum velit quae? Aliquam, sunt temporibus ipsam maxime assumenda obcaecati aperiam cum qui cupiditate asperiores debitis delectus totam maiores atque earum saepe labore eligendi, mollitia consequuntur dolor a. Laboriosam consequuntur delectus numquam in dolorem sed quod ea necessitatibus sint, expedita harum error? Similique sequi accusamus rerum cum, dolore iusto provident deleniti, officiis quas, quisquam architecto. Dignissimos, sapiente! Commodi voluptates, nulla laboriosam eaque iste ducimus, nisi dolore atque quasi, nesciunt suscipit! Excepturi, consequuntur, sapiente temporibus iste laudantium dignissimos illo possimus reprehenderit ullam nemo iure pariatur quibusdam totam animi provident perferendis tempore ipsam quia incidunt. Doloribus pariatur mollitia expedita est error atque ratione accusamus similique, perspiciatis fugiat eligendi voluptatum culpa numquam, recusandae odio rem consectetur molestiae, laborum iusto amet corporis sapiente aliquam unde! Quo nesciunt vero nam facilis maxime, dolor cum odio recusandae dolore, praesentium omnis voluptate, porro minus non molestias consequatur. Sunt itaque ex ipsum. Nobis dicta eveniet similique deleniti repudiandae? Porro nostrum autem fuga voluptatem consequatur qui molestiae ipsam ea fugit quaerat laborum distinctio culpa, fugiat ratione praesentium, reprehenderit nihil perferendis placeat deserunt. Non esse enim asperiores omnis molestiae, totam maxime illo, cumque provident quidem aperiam maiores, quae deleniti nihil odit est consectetur culpa reprehenderit. Earum praesentium, nostrum non quas sit expedita magni odit fugiat culpa? Sunt velit eveniet excepturi, aspernatur natus earum neque dolorem amet numquam praesentium voluptatibus quam voluptates incidunt et corporis quod, voluptatem consequatur? Maxime!</div>
+        <div class="card1">Card3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Website</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root {
+            --color1: #f0f0f0;
+            --color2: #141313;
+            --color3: rgb(255, 0, 221);
+        }
+        /* :root {
+            --color1: #f0f0f0;
+            --color3: rgb(255, 0, 221);
+            --color2: var(--color3);
+        } */
+        /* :root {
+            --color1: #f0f0f0;
+            --color3: rgb(109, 160, 27);
+            --color2: var(--color3);
+        } */
+
+
+
+        @media screen and (max-width: 600px) {
+            body nav {
+                padding: 20px;
+                font-size: 14px;
+            }
+        }
+
+        div {
+            background-color: var(--color2);
+            color: var(--color2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background-color: var(--color1);
+            color: var(--color2);
+            margin: 0;
+        }
+
+        nav {
+
+            background-color: var(--color2);
+            height: 60px;
+            color: var(--color1);
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            padding: 28px 22px;
+            list-style: none;
+            text-wrap: nowrap;
+        }
+
+        .connection {
+            margin-left: 630px;
+        }
+
+        img {
+            position: relative;
+            bottom: 28px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            padding: 2px 2px;
+
+        }
+
+        .button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <img src="github.png" alt="icon" width="100">
+            </li>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <li>
+                <button class="button connection">
+                    <img src="darkmodeIcon.jpg" alt="Dark" width="30" height="30px">
+                </button>
+            </li>
+            <li class="">Signup</li>
+            <li class="">Login</li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

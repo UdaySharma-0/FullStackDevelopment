@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 Flexbox</title>
+
+    <style>
+        .container {
+            height: 80vh;
+            border: 2px solid;
+            display: flex;
+            flex-direction: row;
+            /* Justify-content main-axis ke according content ko move krti h agar value center hai to use main axis ke according center kr degi */
+            /* justify-content:center ; */
+
+            /* Align-Items ek flex box ki property hai jo content ko value ke acc. cross axis ke along move krti hai  */
+            align-items: center;
+            /* Use when item should change their line if there are so many items */
+            flex-wrap: wrap;
+            /* Use when multiple lines in a div box */
+            /* align-content: flex-start; */
+
+            flex-flow: row wrap;
+            /*flex-flow: <flex-direction> <flex-wrap>;*/
+
+            /* gap: 20px; */
+            /* row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 20px;
+        }
+
+        .Item {
+            /* flex-grow: 1; */
+            /* margin: 4px; */
+            border: 2px solid;
+            height: 42px;
+            width: 42px;
+            background-color: blueviolet;
+
+
+        }
+
+        .order-1{
+            order:1001;
+        }
+        .order-2{
+            order: 1;
+        }
+        .order-3{
+            order: 120;
+        }
+
+        .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            /* align-self property provides the ability to item to move independentllly */
+            align-self:flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="Item item1">1</div>
+            <div class="Item">2</div>
+            <div class="Item order-1">3</div>
+            <div class="Item order-3">4</div>
+            <div class="Item">5</div>
+            <div class="Item">6</div>
+            <div class="Item">7</div>
+            <div class="Item">8</div>
+            <div class="Item">9</div>
+            <div class="Item"></div>
+            
+            <div class="Item"></div>
+            <div class="Item"></div>
+
+        </div>
+    </main>
+</body>
+
+</html>

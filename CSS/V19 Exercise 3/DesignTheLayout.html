@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design the Layout</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --bgcolor: rgba(13, 244, 252, 0.562);
+            --primarycolor: rgb(199, 74, 236);
+            --secondarycolor: rgb(14, 88, 226);
+            --textcolor: rgb(211, 0, 0);
+        }
+
+        body {
+            background-color: var(--bgcolor);
+        }
+
+        body:first-child {
+            background-color: blue;
+        }
+
+        nav {
+            background-color: blueviolet;
+            width: 100vw;
+            height: 68px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        } */
+
+        ul li {
+            float: left;
+            display: inline;
+            list-style: none;
+            padding: 23px;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        ul li img {
+            /* float: left; */
+            margin-right: 20px;
+            margin-bottom: 10px;
+            position:relative;
+            bottom: 20px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background-color: whitesmoke;
+        }
+
+        .box1 {
+            background-color: rgb(241, 185, 241);
+            margin: 123px 10px 0px 20px;
+            width: 47%;
+            font-size: medium;
+            font-family: cursive;
+            color: rgb(14, 88, 226);
+            word-break: break-all;
+
+        }
+
+        .box1 h1,
+        .box2 h1 {
+            color: rgb(32, 0, 211);
+            text-align: center;
+
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .box2 {
+            position: absolute;
+            width: 47%;
+            top: 123px;
+            left: 52%;
+            background-color: rgb(241, 185, 241);
+            font-size: medium;
+            font-family: cursive;
+            color: rgb(14, 88, 226);
+            word-break: break-all;
+        }
+
+        .action {
+            margin: 10px 0px 0px 0px;
+            background-color: rgb(41, 29, 41);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            height: 185px;
+            text-align: center;
+            overflow: hidden;
+            border: 2px solid white;
+            border-radius: 14px;
+            text-transform: uppercase;
+        }
+
+        #action-title {
+            position: relative;
+            top: 40px;
+        }
+
+        #img {
+            position: fixed;
+            top: 500px;
+            left: 92%;
+            width: 70px;
+            z-index: 500;
+            background-color: rgb(247, 246, 248);
+            border: 3px solid #1e29c2;
+            border-radius: 50%;
+
+        }
+
+        #footer {
+            margin: 20px 0px 0px 0px;
+            padding: 20px;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-weight: 600;
+            color: whitesmoke;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img src="./../V16 Exercise/github.png" alt="github logo" width="100">
+            </li>
+            <li><a href="./../V16%20Exercise/MulticolorWebsite.html"> Home</a></li>
+            <li><a href="./../V17%20Float%20and%20Clear/CssFloat_Clear.html">Services</a></li>
+            <li><a href="./../V18%20More%20on%20Selectors/MoreSelectors.html">About us</a></li>
+            <li><a href="./../V19%20Exercise%203/DesignTheLayout.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="box1">
+        <h1>
+            Chiller Guys
+        </h1>
+        <div class="content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque iusto non soluta, porro eaque earum ullam,
+            quibusdam consequuntur doloribus ad similique debitis tenetur maiores? Iure autem laudantium aliquam, sequi
+            doloribus minima sunt ullam ex veniam repudiandae porro vel aperiam magni alias obcaecati ea voluptate!
+            Adipisci eius, accusamus a similique et repellendus accusantium qui alias quaerat praesentium quasi quam in
+            aperiam labore itaque incidunt velit iste facilis temporibus atque? Molestiae aperiam labore iure! Sunt eum
+            corporis, reprehenderit, odit eveniet eius enim sapiente quisquam quod perferendis exercitationem maxime
+            laudantium saepe voluptate inventore recusandae aperiam ducimus! Asperiores aliquid neque rerum ad eligendi,
+            id blanditiis veniam, distinctio impedit autem nemo consequuntur fugit esse, doloribus assumenda? In
+            provident quo cum, tenetur qui incidunt! Quae consequatur, maxime nemo a pariatur distinctio eos
+            necessitatibus mollitia nihil hic laboriosam laudantium qui nisi dolorum cum autem incidunt iusto quasi. At
+            reprehenderit illum voluptatem porro fuga veritatis tempore odio aperiam adipisci neque. Cupiditate est in,
+            corporis ipsum debitis accusantium sint! Quisquam asperiores quis omnis pariatur delectus inventore alias
+            repellendus ullam eum quas hic optio rem facere possimus id quae, cupiditate nam corrupti in placeat iste,
+            repudiandae enim eveniet? Itaque corporis accusantium repudiandae ab sed omnis vero totam doloribus,
+            aperiam, deserunt laudantium soluta inventore quibusdam nesciunt. Beatae odio, earum asperiores tempore qui
+            laudantium provident sed exercitationem dolor totam, dolores, quas est aliquam? Hic aspernatur magnam id
+            eveniet, expedita tempora voluptatum omnis. Sed, magni beatae. Facere sed numquam, nemo quidem provident
+            atque? Odit, ut fuga? Illum molestias dicta deleniti. Voluptate quibusdam blanditiis, velit unde dignissimos
+            enim similique voluptates nobis atque. Dignissimos, earum tenetur facilis eligendi ipsum odio quis minus
+            aut, repudiandae illum voluptatum dolor! Deleniti non impedit explicabo harum magnam, officiis maiores
+            dolore qui quasi. Velit magnam facere illum sint enim voluptate vero dignissimos vel, a hic laboriosam ipsum
+            at sit odio beatae praesentium adipisci minima, fugiat maxime. Recusandae doloremque optio ea magni autem
+            rerum voluptatem corporis perferendis animi, facere quidem tenetur ducimus fugit repellat sit accusantium
+            ipsam, saepe dicta expedita quae voluptate atque reprehenderit non cum? Molestias fugiat inventore saepe, ad
+            doloremque voluptatibus, minima assumenda at rerum commodi hic itaque voluptate ipsa recusandae cum fuga
+            eligendi odit. Saepe cumque doloribus beatae dolorum ratione quod libero, iure id error quas expedita
+            provident ullam. Accusantium, amet ad! Dolor nemo pariatur harum similique itaque sequi labore repellat
+            asperiores, exercitationem laboriosam dignissimos obcaecati inventore odio eius consectetur doloremque
+            deleniti assumenda perspiciatis consequatur quam perferendis maxime laudantium tempora? Provident natus
+            commodi deserunt esse deleniti, sapiente molestias, aut nobis, perferendis aliquid recusandae quos? Vel
+            adipisci, provident maxime inventore voluptate quaerat repellat quisquam deserunt vitae earum reiciendis
+            omnis sequi, optio modi recusandae a eaque nam quam eveniet hic nesciunt corrupti veritatis? Voluptates
+            ipsam eos molestiae exercitationem veritatis iste eligendi odit sint?
+        </div>
+    </div>
+
+    <div class="box2">
+        <h1>
+            killer Guys
+        </h1>
+        <div class="content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque iusto non soluta, porro eaque earum ullam,
+            quibusdam consequuntur doloribus ad similique debitis tenetur maiores? Iure autem laudantium aliquam, sequi
+            doloribus minima sunt ullam ex veniam repudiandae porro vel aperiam magni alias obcaecati ea voluptate!
+            Adipisci eius, accusamus a similique et repellendus accusantium qui alias quaerat praesentium quasi quam in
+            aperiam labore itaque incidunt velit iste facilis temporibus atque? Molestiae aperiam labore iure! Sunt eum
+            corporis, reprehenderit, odit eveniet eius enim sapiente quisquam quod perferendis exercitationem maxime
+            laudantium saepe voluptate inventore recusandae aperiam ducimus! Asperiores aliquid neque rerum ad eligendi,
+            id blanditiis veniam, distinctio impedit autem nemo consequuntur fugit esse, doloribus assumenda? In
+            provident quo cum, tenetur qui incidunt! Quae consequatur, maxime nemo a pariatur distinctio eos
+            necessitatibus mollitia nihil hic laboriosam laudantium qui nisi dolorum cum autem incidunt iusto quasi. At
+            reprehenderit illum voluptatem porro fuga veritatis tempore odio aperiam adipisci neque. Cupiditate est in,
+            corporis ipsum debitis accusantium sint! Quisquam asperiores quis omnis pariatur delectus inventore alias
+            repellendus ullam eum quas hic optio rem facere possimus id quae, cupiditate nam corrupti in placeat iste,
+            repudiandae enim eveniet? Itaque corporis accusantium repudiandae ab sed omnis vero totam doloribus,
+            aperiam, deserunt laudantium soluta inventore quibusdam nesciunt. Beatae odio, earum asperiores tempore qui
+            laudantium provident sed exercitationem dolor totam, dolores, quas est aliquam? Hic aspernatur magnam id
+            eveniet, expedita tempora voluptatum omnis. Sed, magni beatae. Facere sed numquam, nemo quidem provident
+            atque? Odit, ut fuga? Illum molestias dicta deleniti. Voluptate quibusdam blanditiis, velit unde dignissimos
+            enim similique voluptates nobis atque. Dignissimos, earum tenetur facilis eligendi ipsum odio quis minus
+            aut, repudiandae illum voluptatum dolor! Deleniti non impedit explicabo harum magnam, officiis maiores
+            dolore qui quasi. Velit magnam facere illum sint enim voluptate vero dignissimos vel, a hic laboriosam ipsum
+            at sit odio beatae praesentium adipisci minima, fugiat maxime. Recusandae doloremque optio ea magni autem
+            rerum voluptatem corporis perferendis animi, facere quidem tenetur ducimus fugit repellat sit accusantium
+            ipsam, saepe dicta expedita quae voluptate atque reprehenderit non cum? Molestias fugiat inventore saepe, ad
+            doloremque voluptatibus, minima assumenda at rerum commodi hic itaque voluptate ipsa recusandae cum fuga
+            eligendi odit. Saepe cumque doloribus beatae dolorum ratione quod libero, iure id error quas expedita
+            provident ullam. Accusantium, amet ad! Dolor nemo pariatur harum similique itaque sequi labore repellat
+            asperiores, exercitationem laboriosam dignissimos obcaecati inventore odio eius consectetur doloremque
+            deleniti assumenda perspiciatis consequatur quam perferendis maxime laudantium tempora? Provident natus
+            commodi deserunt esse deleniti, sapiente molestias, aut nobis, perferendis aliquid recusandae quos? Vel
+            adipisci, provident maxime inventore voluptate quaerat repellat quisquam deserunt vitae earum reiciendis
+            omnis sequi, optio modi recusandae a eaque nam quam eveniet hic nesciunt corrupti veritatis? Voluptates
+            ipsam eos molestiae exercitationem veritatis iste eligendi odit sint?
+        </div>
+    </div>
+
+    <div class="action">
+        <h1 id="action-title">
+            Sigma <br> Web Development Course
+        </h1>
+        <p
+            style="font-size: 15px; font-weight: 500; font-family: 'Poppins', sans-serif; color: white; position: relative; top: 40px; text-transform: capitalize;">
+            - by Uday
+        </p>
+    </div>
+
+    <div class="img">
+        <img id=img src="./../V16 Exercise/github.png" alt="chatbot logo">
+    </div>
+
+    <footer>
+        <p id="footer">
+            Contact us:- <br>
+            Email - udaysharma@gmail.com <br>
+            Insta id - uday_0610 <br>
+            &copy; 2025 All Right Reserved
+        </p>
+    </footer>
+</body>
+
+</html>
