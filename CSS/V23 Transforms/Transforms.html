@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transforms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            background-color: aqua;
+            transform: rotate(45deg);
+            /* transform: rotate(0.125turn);  Works on 360 deg priciple here angle is 45deg*/
+            /* transform: rotateZ(45deg) ;    rotate according to axis*/
+            /* transform: scale(1.4) ;    it multiply the value in existing box size*/
+            /* transform: skew(5deg)  to move box italically; */
+            /* transform: skewY(9deg); */
+            /* transform: translateY(-20px) translateX(100%) skewY(8deg); */
+            transform-origin: -0% -2%;  /*x axis y axis*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

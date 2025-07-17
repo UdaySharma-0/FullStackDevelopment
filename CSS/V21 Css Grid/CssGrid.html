@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 70vh;
+            border: 2px solid lime;
+            display: grid;
+            /* grid-template-columns: [pehela]120px [dusra]100px [t];
+            grid-template-rows: 100px 100px 100px; */
+
+            /* fr is a unit in css grid used to divide column in specified ratio */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(4, 50px);
+            grid-template-rows: repeat(2, 80px);
+            gap: 34px;
+            row-gap: 10px;
+            column-gap: 34px;
+
+            /* ye dono properties grid cell ke liye use hoti */
+            justify-items: center;
+            align-items: center;
+            place-content: center; /*justify content aur align content ko ek sath ek property dene ke liye place content use hota hai*/
+
+            /* ye dono properties container me sabhi items ke liye ek sath use hoti hai */
+            justify-content: space-evenly;
+            align-content: center;
+            
+        }
+
+        .items{
+            border: 2px solid red;
+            height: 39px;
+            width: 39px; 
+        }
+
+        .item-4{
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            /* shorthand to use above both properties */
+            /* grid-row: 1/2; 
+
+
+            grid-column: dusra/t; */ 
+        }
+
+        .item-1{
+            /* grid-row: 1/2; 
+            grid-column: 1/2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items item-2">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>
