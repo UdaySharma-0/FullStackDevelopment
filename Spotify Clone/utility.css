@@ -1,0 +1,36 @@
+:root{
+    --bgcolor : black;
+    --txtcolor : white;
+    --grayfontcolor : #b3b3b3
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.padding{
+    padding: 2px;
+}
+.border{
+    border: 2px solid black;
+    margin: 3px;
+}
+.links{
+    text-decoration: none;
+    color: var(--grayfontcolor);
+}
+.smallfont{
+    font-size: .85em;
+}
+
+/* xmlns='http://www.w3.org/2000/svg' */

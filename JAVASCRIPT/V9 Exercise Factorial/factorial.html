@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <!-- Write a program to calculate factorial of a num using reduce and loops -->
+
+    <script>
+        let numb = prompt('Enter the number for factorial Calculation')
+        let element = 1
+        // for (let i = 1; i <= numb; i++) {
+            //     element = i * element;
+            //     arr.push(i)
+            // }
+            // console.log(arr);
+            
+        let arr = Array.from(Array(numb+1).keys())
+        console.log(arr);
+        
+        const factorialReduce = arr.slice(1,).reduce((a, b)=>{
+            return a*b
+        })
+        console.log("Factorial is " + factorialReduce);
+        
+        alert("Factorial is " + factorialReduce)
+    </script>
+</body>
+</html>

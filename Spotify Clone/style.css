@@ -1,0 +1,137 @@
+body {
+    /* background-color: var(--bgcolor); */
+    color: var(--grayfontcolor);
+    font-family: "SpotifyMixUI", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.navcontainer ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.navcontainer ul {
+    font-size: .8rem;
+    height: 2.7rem;
+
+}
+
+.mySvgIcons path {
+    fill: white;
+}
+
+.searchbox {
+    border-radius: 10px;
+    width: 23.4rem;
+    /* color: ; */
+    gap: 0px 10px;
+}
+
+.basicNav {
+    width: 61%;
+    height: 2.7rem;
+}
+
+.mainNav {
+    gap: 0px 5px;
+}
+
+.dividerNav {
+    background-color: white;
+    width: 1.2px;
+    height: 1.4rem;
+    margin: 0px 6px;
+}
+
+.install {
+    text-wrap: nowrap;
+}
+
+.downloadImg {
+    height: 15px;
+    margin: 0px 2px 0px 15px;
+}
+
+.loginbtn {
+    padding: 12px 25px;
+    margin: 0px 5px;
+    background-color: white;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.loginbtn a {
+    color: black;
+    background-color: white;
+    font-weight: 800;
+}
+
+.left {
+    width: 25vw;
+    /* border: 1px solid white; */
+    padding: 15px 20px;
+    color: white;
+
+}
+
+.library {
+    width: 21vw;
+    text-wrap: nowrap;
+}
+
+.createBrowse {
+    padding: 4.8vh 2vw;
+    color: var(--txtcolor);
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.createBrowse h2 {
+    font-size: .8em;
+}
+
+.createBrowse p {
+    font-size: .7em;
+}
+
+.createBrowsebtn {
+    margin-top: 3px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 40px;
+    width: 9.5vw;
+    cursor: pointer;
+
+}
+
+.sitePersonalLinks {
+    width: 25vw;
+    font-size: .6em;
+    flex-wrap: wrap;
+    padding: 10vh 15px 5px 15px;
+}
+
+.sitePersonalLinks p {
+    padding: 5px 8px ;
+}
+
+.cookies {
+    padding: 0px 25px 10px 25px;
+    font-size: .6em;
+    color: white;
+}
+
+.englishbtn {
+    color: white;
+    margin: 20px;
+    padding: 5px;
+    border: .1px solid white;
+    border-radius: 20px;
+    gap: 0px 3px;
+    cursor: pointer;
+}
+
+.right {
+    width: 75vw;
+}

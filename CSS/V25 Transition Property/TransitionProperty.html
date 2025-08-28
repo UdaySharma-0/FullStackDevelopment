@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Css</title>
+    <style>
+        .container {
+            background-color: blueviolet;
+            width: 50vw;
+            height: 40vh;
+            margin-left: 500px;
+        }
+
+        .line {
+            width: 198%;
+            border: 1px solid;
+            /* margin-top: 78px; */
+        }
+
+        .box {
+            margin: 70px;
+            margin-bottom: 0;
+            background-color: aqua;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            /* transition-property: background-color transform;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0.99,-0.62, 0, 1.01);
+            transition-delay: 1s; */
+            /* transition: all 3s ease-out 1s;
+            animation: bounce 8s ease-in-out 1ms infinite,
+                bounce2 8s ease-in-out 8s infinite; */
+        }
+
+        .box {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            animation: bounceLeft 4s ease-out infinite 1s;
+        }
+
+        @keyframes bounceLeft {
+  0%   { transform: translate(0, 0) scaleY(1); }
+  10%  { transform: translate(-50px, -80px) scaleY(0.7); }
+  20%  { transform: translate(-100px, 0) scaleY(1); }
+  30%  { transform: translate(-150px, -60px) scaleY(0.75); }
+  40%  { transform: translate(-200px, 0) scaleY(1); }
+  50%  { transform: translate(-250px, -40px) scaleY(0.8); }
+  60%  { transform: translate(-300px, 0) scaleY(1); }
+  70%  { transform: translate(-350px, -20px) scaleY(0.85); }
+  80%  { transform: translate(-400px, 0) scaleY(1); }
+  100% { transform: translate(-450px, 0) scaleY(1); }
+}
+
+        @keyframes bounceSquash {
+            0% {
+                transform: translate(0, 0) scaleY(1);
+            }
+
+            10% {
+                transform: translate(50px, -80px) scaleY(0.7);
+            }
+
+            20% {
+                transform: translate(100px, 0) scaleY(1);
+            }
+
+            30% {
+                transform: translate(150px, -60px) scaleY(0.75);
+            }
+
+            40% {
+                transform: translate(200px, 0) scaleY(1);
+            }
+
+            50% {
+                transform: translate(250px, -40px) scaleY(0.8);
+            }
+
+            60% {
+                transform: translate(300px, 0) scaleY(1);
+            }
+
+            70% {
+                transform: translate(350px, -20px) scaleY(0.85);
+            }
+
+            80% {
+                transform: translate(400px, 0) scaleY(1);
+            }
+
+            100% {
+                transform: translate(450px, 0) scaleY(1);
+            }
+        }
+
+
+
+        .translate {
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: black;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px);
+            }
+
+            15% {
+                transform: translateY(-100px) translateX(90px);
+            }
+
+            25% {
+                transform: translateX(180px);
+            }
+
+            37.5% {
+                transform: translateY(-100px) translateX(270px);
+            }
+
+            50% {
+                transform: translateX(360px);
+            }
+
+            87.5% {
+                transform: translateY(-100px) translateX(450px);
+            }
+
+            100% {
+                transform: translateX(540px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: auto; height: 200px;"></div>
+    <div class="container">
+        <div class="box bounce">
+        </div>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>

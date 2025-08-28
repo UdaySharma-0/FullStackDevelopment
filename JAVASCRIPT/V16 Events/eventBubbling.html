@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background: aliceblue;
+            border: 2px solid;
+            padding: 34px;
+            margin: 34px;
+        }
+
+        .childContainer {
+            background-color: aquamarine;
+            padding: 34px;
+            margin: 34px;
+        }
+
+        .container {
+            background-color: rgb(232, 255, 127);
+            padding: 34px;
+            margin: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector('.child').addEventListener('contextmenu', (e) => {
+            //this stops the happening of Event Bubbling
+            //stopPropagation will stop the event to propagate to their parents
+            e.stopPropagation()
+            alert('The child was clicked')
+        })
+
+        document.querySelector('.childContainer').addEventListener('contextmenu', (e) => {
+            alert('The childContainer was clicked')
+        })
+        document.querySelector('.container').addEventListener('contextmenu', (e) => {
+            alert('The container was clicked')
+        })
+
+        function randomColor() {
+                let randomColor1 = Math.random() * 222;
+                let randomColor2 = Math.random() * 222;
+                let randomColor3 = Math.random() * 222;
+                return `rgb(${randomColor1}, ${randomColor2}, ${randomColor3})`
+        }
+        //setInterval is funct that run a piece of code repeatedly after given time 
+        // and if you want to stop it just write clearInterval(a)
+        // let a = setInterval(() => {
+        //     document.querySelector('.child').style.backgroundColor = randomColor()
+        // }, 1000);
+
+        // console.log(a);
+        
+        //setTimeout is funct that run a piece of code once after given time and if you want to stop it just write clearInterval(a)
+        let b = setTimeout(() => {
+            document.querySelector('.child').style.backgroundColor = randomColor()
+        }, 1000);
+
+        console.log(b);
+        
+
+        console.log(b);
+    </script>
+</body>
+
+</html>
