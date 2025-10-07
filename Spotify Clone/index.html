@@ -7,6 +7,7 @@
     <title>Spotify Music App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
     </header>
 
 
-    <div class="container flex">
+    <main class="container flex">
         <aside>
             <div class="left smallfont flex item-center">
                 <div class="library">Your Library</div>
@@ -63,7 +64,7 @@
             <div class="createBrowse flex">
                 <h2>Let's find some podcast to follow</h2>
                 <p>We'll keep you updated on new episodes.</p>
-                <button class="createBrowsebtn">Browse podcasts</button>
+                <button class="createBrowsebtn font-bold">Browse podcasts</button>
             </div>
             <div class="sitePersonalLinks flex">
                 <p>Legal</p>
@@ -74,10 +75,30 @@
                 <p>Accessibility</p>
             </div>
             <div class="cookies">Cookies</div>
-            <a href="#"><button class="englishbtn flex item-center"><img src="https://i.pinimg.com/736x/24/d0/53/24d05378a4e049358f1c237976dbbb43.jpg" alt="" width="20">English</button></a>
+            <a href="#"><button class="englishbtn flex item-center h-[1.6rem] text-sm"><img
+                        src="https://i.pinimg.com/736x/24/d0/53/24d05378a4e049358f1c237976dbbb43.jpg" alt=""
+                        width="20">English</button></a>
         </aside>
-        <div class="right border "></div>
-    </div>
+
+        <!-- Songs Section -->
+        <section class="right border ">
+            <div class="trendheading flex ">
+                <div class="trendspan">Trending Songs</div>
+                <div class="showAllspan">Show All</div>
+            </div>
+            <div class="cardbox">
+                <div class="card flex">
+                    <div class="size-40">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02b22e21de789378f223e1795f" alt="songImg">
+                    </div>
+                    <div class="songdetails">
+                        <div class="text-bs text-white p-2">Deva Shree Ganesha</div>
+                        <div class="text-sm">Ajay-Atul, Ajay Gogavale</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 

@@ -68,7 +68,7 @@ body {
 }
 
 .left {
-    width: 25vw;
+    width: 22vw;
     /* border: 1px solid white; */
     padding: 15px 20px;
     color: white;
@@ -97,12 +97,15 @@ body {
 
 .createBrowsebtn {
     margin-top: 3px;
-    padding: 5px 10px;
+    padding: 0px 10px;
     background-color: white;
+    color: var(--bgcolor);
     border-radius: 40px;
-    width: 9.5vw;
+    width: 8.5vw;
+    height: 26px;
+    font-size: .75rem;
     cursor: pointer;
-
+    text-wrap: nowrap;
 }
 
 .sitePersonalLinks {
@@ -133,5 +136,31 @@ body {
 }
 
 .right {
-    width: 75vw;
+    width: 82vw;
+}
+
+.trendheading{
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 8vh;
+}
+.trendspan{
+    align-content: baseline;
+    font-size: 1.5em;
+    color: var(--txtcolor);
+}
+.showAllspan{
+    font-size: .8em;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+.showAllspan:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-weight: bold;
+}
+.card{
+    width: 13vw;
+    gap: 2px 5px;
+    flex-direction: column;
 }

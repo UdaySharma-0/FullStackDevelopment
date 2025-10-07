@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- <h1>Nidhi Sharma</h1> -->
+    <script>
+        async function test() {
+            let a = await fetch("/", {method: "PUT"})
+            let b = await a.text()
+            console.log(a.status);
+            console.log(b); 
+        }
+        test()
+    </script>
+</body>
+</html>
