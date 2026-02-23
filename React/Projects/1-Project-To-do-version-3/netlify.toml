@@ -1,0 +1,4 @@
+[build]
+  base = "React/Projects/1-Project-To-do-version-3"
+  command = "npm run build"
+  publish = "dist"
