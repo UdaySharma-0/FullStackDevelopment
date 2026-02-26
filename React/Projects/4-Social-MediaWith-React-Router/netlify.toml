@@ -1,0 +1,4 @@
+[build]
+  base = "React/Projects/4-Social-MediaWith-React-Router"
+  command = "npm run build"
+  publish = "dist"
