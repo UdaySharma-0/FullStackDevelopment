@@ -1,10 +1,23 @@
+import { useEffect } from "react";
+import { useState } from "react";
+
 const CurrentTime = ()=>{
-    let time = new Date();
-    let date = time.toLocaleDateString()
-    let realTime = time.toLocaleTimeString()
+    const [time, setTime] = useState(new Date());
+
+    useEffect(() =>{
+        console.log("Interval has been setup");
+        const intervalId = setInterval(() => {
+            setTime(new Date());
+        }, 1000);
+
+        return ()=>{
+            clearInterval(intervalId);
+            console.log('Canceled the Interval');
+        }
+    })
 
     return <p className="p-2 text-center">
-        This is the current time : {date} and {realTime}
+        This is the current time : {time.toLocaleDateString()} and {time.toLocaleTimeString()}
     </p>
 }
 

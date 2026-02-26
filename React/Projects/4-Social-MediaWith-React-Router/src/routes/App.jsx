@@ -10,13 +10,7 @@ const App = () => {
   let [selectedTab, setSelectedTab] = useState("Home");
 
   return (
-    <PostListProvider
-      value={{
-        postList: [],
-        addPost: () => {},
-        deletePost: () => {},
-      }}
-    >
+    <PostListProvider>
       <div>
         <Navbar setSelectedTab={setSelectedTab} />
         <Outlet/>
